@@ -29,6 +29,7 @@ type Media struct {
 	FileName string
 	FileData []byte
 	FileSize int64
+	MimeType string
 	OrgID    uint
 	Org      Org
 }

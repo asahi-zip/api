@@ -16,6 +16,7 @@ func SetupRouter() *gin.Engine {
 	protected.Use(middlewares.TokenAuthMiddleware())
 	protected.POST("/orgs/new", controllers.CreateOrg)
 	protected.POST("/media/upload", controllers.UploadMedia)
+	protected.GET("/media/:id", controllers.GetMedia)
 
 	return r
 }
